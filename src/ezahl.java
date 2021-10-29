@@ -1,15 +1,20 @@
 public class ezahl {
     public static void main(String[] args) {
         System.out.println("moijn");
-        int a = factorial(6);
+        double a = euler(1000);
         System.out.print(a);
 
     }
-    public static double a {
-
+    public static double euler(double max) {
+        double e = 0;
+        while(max >= 0){
+            e +=(1/factorial(max));
+            max--;
+        }
+        return e;
     }
 
-    public static int factorial(int n){
+    public static double factorial(double n){
         if(n <= 1){
             return 1;
         }
